@@ -2,7 +2,10 @@
 
 $arr = [1,1,1,2,2,3,4,4,5,5,6,6,6,6,7,8,9,9];
 
-
+/**
+ * 移除重复元素 以保存两个重复元素为例
+ * @param $arr
+ */
 function delRepeat(&$arr){
     $len = count($arr);
     $count = 1;
