@@ -1,7 +1,11 @@
 <?php
 
-$arr = [1,2,3,4,5,6,2,7,8,2];
-
+$arr = [3,2,2,3];
+/** leetcode 27
+ * @param $arr
+ * @param $ele
+ * @return int
+ */
 
 //unset($arr[5]);
 //var_dump($arr);
@@ -9,17 +13,16 @@ $arr = [1,2,3,4,5,6,2,7,8,2];
 //die;
 
 function moveEle(&$arr,$ele){
-    $count = count($arr);
-    $j = 0;
-    for ($i=0;$i<$count;$i++){
+    $c = $count = count($arr);
+    for ($i=0;$i<$c;$i++){
         if($arr[$i] == $ele){
             unset($arr[$i]);
-            $j++;
+            $count--;
         }
     }
-    return $j;
+    return $count;
 }
 var_dump($arr);
-$r = moveEle($arr,2);
+$r = moveEle($arr,3);
 var_dump($r);
 var_dump($arr);
