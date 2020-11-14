@@ -1,5 +1,13 @@
 <?php
 
+
+
+
+
+
+
+
+
 /**
  * @param $arr
  * @param $target
@@ -13,9 +21,9 @@ function bin_search($arr,$target){
         if($arr[$mid] == $target){
             return $mid;
         }else if($arr[$mid] > $target){
-            $high--;
+            $high = $mid-1;
         }else{
-            $low++;
+            $low = $mid+1;
         }
 
     }
@@ -33,10 +41,9 @@ function bin_search2($arr,$target,$low,$high){
         }
     }
     return false;
-
 }
 
 $arr = [1,3,6,9,13,18,19,29,38,47,51,56,58,59,60,63,65,69,70,71,73,75,76,77,79,89];
 
 echo bin_search($arr,79);
-echo bin_search2($arr,79,0,count($arr));
+echo bin_search2($arr,79,0,count($arr)-1);
