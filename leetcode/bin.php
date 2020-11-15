@@ -11,7 +11,7 @@
 /**
  * @param $arr
  * @param $target
- * @return bool|int asdasd 
+ * @return bool|int asdasd  asdasdasdyuxiang
  */
 function bin_search($arr,$target){
     $low = 0;
