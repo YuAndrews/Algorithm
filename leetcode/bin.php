@@ -3,7 +3,7 @@
 /**
  * @param $arr
  * @param $target
- * @return bool|int
+ * @return bool|int asdasd 
  */
 function bin_search($arr,$target){
     $low = 0;
